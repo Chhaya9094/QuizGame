@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Quiz</title>
+		<link type="text/css" rel="stylesheet" href="css/styles.css" />
+		<script type="text/javascript" src="js/quiz.js"></script>
+	</head>
+
+	<body>
+
+
+		<div id="quizContainer">
+			
+
+			<h2> Question <span id="currentQuestionCount"></span> </h2>
+
+			<div id='questionCard_1'>
+				<div class="question"> what is the largest ocean in the world? </div>
+				<div id="options">
+					<input type='radio' id = "question_1_answer"  name="question_1_answer" value="0">Atlantic Ocean</input><br/>
+					<input type='radio' name="question_1_answer" value="1">Pacific Ocean</input><br/>
+					<input type='radio' name="question_1_answer" value="2">Arctic Ocean</input><br/>
+					<input type='radio' name="question_1_answer" value="3">Indian Ocean</input><br/>
+				</div>
+			</div>
+
+			<div id='questionCard_2' style="display:none;">
+				<div class="question"> what is the capital of Japan? </div>
+				<div id="options">
+					<input type='text' id="question_2_answer" value="" />
+				</div>
+			</div>
+
+			<div id='questionCard_3' style="display:none;">
+				<div class="question"> How many continents are there in the World? </div>
+				<div id="options">
+					<input type='number' id="question_3_answer" value="" />
+				</div>
+			</div>
+
+			<div id='questionCard_4' style="display:none;">
+				<div class="question"> This is fourth question? </div>
+				<div id="options">
+					<input type='radio' id = "question_4_answer" name="question_4_answer" value="0">Option 1</input><br/>
+					<input type='radio' name="question_4_answer" value="1">Option 2</input><br/>
+					<input type='radio' name="question_4_answer" value="2">Option 3</input><br/>
+					<input type='radio' name="question_4_answer" value="3">Option 4</input><br/>
+				</div>
+			</div>
+
+			<div id='questionCard_5' style="display:none;">
+				<div class="question"> This is fifth question? </div>
+				<div id="options">
+					<input type='radio' id = "question_5_answer" name="question_5_answer" value="0">Option 1</input><br/>
+					<input type='radio' name="question_5_answer" value="1">Option 2</input><br/>
+					<input type='radio' name="question_5_answer" value="2">Option 3</input><br/>
+					<input type='radio' name="question_5_answer" value="3">Option 4</input><br/>
+				</div>
+			</div>
+
+			<br/>
+
+			<div style="margin:20px;">
+				<input type='button' id='previous' value="Previous" />
+				<input type='button' id='next'  value="Next" />
+				<input type='button' id='submit'  value="Submit" />
+			</div>
+
+		</div>
+
+		<div id="scoreContainer" style="display:none;">
+			<h2> Your Score is : <bold id="score">0</bold> </h2> 
+		</div><br/>
+
+		<script type="text/javascript">
+			
+		</script>
+	</body>
+
+</html>
